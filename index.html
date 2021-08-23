@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bootstrap forms
+        </title>
+        <link rel="stylesheet" href="bootstrap.min.css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        body{
+            background-image: url(pic/bbg.jpg);
+            background-size: 150%;
+        }
+        #aas{
+            width:260px;
+        }
+        #ta{
+            width:260px;
+            height:130px;
+        }
+        #cc{
+            width:260px;
+            height:150px;
+        }
+        table{
+            position: relative;
+            left:10px;
+            
+        }
+        table.center {
+              margin-left: auto; 
+              margin-right: auto;
+            }
+    </style>
+    <body>
+        <div class="container bg-dark text-white fs-1 border border-primary text-center">
+            <p>COURSE REGISTRATION FORM</p>
+        </div><br/> 
+        <table>
+            <center>
+                <form >
+                    <div class="mb-2 col-2" >
+                    <label for="exampleInputName" class="form-label" style="padding-left: 10px;"><b><h5>Name</h5></b></label>
+                    <input type="text" class="form-control" id="exampleInputName" width="100px" required/>
+                    </div>
+                    <div class="mb-2 col-2">
+                    <label for="exampleInputName2" class="form-label" style="padding-left: 10px;"><b><h5>Roll Number</h5></b></label>
+                    <input type="text" class="form-control" id="exampleInputName2" width="100px" required/>
+                    </div>
+                    <div class="mb-3 col-2 ">
+                        <label for="exampleInputemail" class="form-label" style="padding-left: 10px;"><b><h5>Email</h5></b></label><br/>
+                        <input type="email" class="form-control" id="exampleemail" required>
+                    </div>
+                    <div class="mb-3 col-2">
+                        <label for="exampleInputemail" class="form-label" style="padding-left: 10px;"><b><h5>DOB</h5></b></label><br/>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <label for="exampleInputemail" class="form-label" style="padding-left: 10px;"><b><h5>Gender</h5></b></label><br/>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b><h6>Male</h6></b></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b><h6>Female</h6></b></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><b><h6>Transgender</h6></b></label>
+                    </div>
+                    </div> 
+                    <br/> <br/>
+                    <label for="exampleInputName" class="form-label" style="padding-left: 10px;"><b><h5>Department</h5></b></label>
+                    <select class="form-select" aria-label="Default select example " width="100px" id="aas" required>
+                        <option selected>Select Department</option>
+                        <option value="1">IT</option>
+                        <option value="2">CSE</option>
+                        <option value="3">EEE</option>
+                        <option value="3">ECE</option>
+                        <option value="3">E&I</option>
+                    </select>
+                    <br/> 
+                    <label for="exampleInputName" class="form-label" style="padding-left: 10px;"><b><h5>Address</h5></b></label>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="ta" rows="3" required></textarea>
+                    </div>
+                    <br/>
+                    <label for="exampleInputName" class="form-label" style="padding-left: 10px;"><b><h5>Select Course</h5></b></label>
+                    <select class="form-select" multiple aria-label="multiple select example" id="cc" required>
+                        <option selected> select course</option>
+                        <option value="1">Cyber Security</option>
+                        <option value="2">Cloud Computing</option>
+                        <option value="3">Big Data</option>
+                        <option value="3">AI</option>
+                        <option value="3">Computer Graphics</option>
+                    </select>
+                    <br/>
+                    <div class="mb-2 col-2" >
+                        <label for="exampleInputName" class="form-label" style="padding-left: 10px;"><b><h5>Phone Number</h5></b></label>
+                        <input type="text" class="form-control" id="exampleInputName" width="100px" required/>
+                    </div>
+                    <br/>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">submit</button>
+                    </div>
+                </form>
+            </center>
+        </table>
+    </body>
+</html>
